@@ -15,7 +15,7 @@ const StarshipList = (props) => {
         <div className="icon-container">
           {results.map((starship) => (
             <Link className="card" key={starship.url} state={{ starship }} to='/starship'>
-              <div id="classDiv" >
+              <div class="card-body" >
                 {starship.name}
               </div>
             </Link>
