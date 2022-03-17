@@ -10,10 +10,11 @@ const StarshipList = (props) => {
   }, [])
   return (
     <>
+      <img id="starships" src="https://i.imgur.com/qEYEpZc.png" alt="STARSHIPS" />
       <div>
         <div className="icon-container">
           {results.map((starship) => (
-            <Link key={starship.url} state={{ starship }} to='/starship'>
+            <Link className="card" key={starship.url} state={{ starship }} to='/starship'>
               <div id="classDiv" >
                 {starship.name}
               </div>

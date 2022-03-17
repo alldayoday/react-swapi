@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { getDetails } from "../services/sw-api";
+import Pilots from "./Pilot";
 
 const StarshipPage = (props => {
   const [starship, setStarship] = useState({})
@@ -11,11 +12,17 @@ const StarshipPage = (props => {
   }, [])
   return (
   <>
-  <div>
-    <div>{starship.name}</div>
-    <div>{starship.model}</div>
-    <Link to="/">Return
-    </Link>
+  <h1>DETAILS</h1>
+    <div className="card">
+    <h5 className="card-header">Starship Log</h5>
+    <h5 className="card-title">Name: {starship.name}</h5>
+    <div className="card-text">Model: {starship.model}</div>
+    {starship.pilots?.length?
+    <Pilots pilots={starship.pilots} />
+    :
+    <p>No Pilots</p>
+    }
+    <Link className="btn btn-primary" to="/">Return</Link>
   </div>
   </>
   )})

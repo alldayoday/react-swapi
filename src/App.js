@@ -6,9 +6,6 @@ import StarshipPage from './pages/StarshipPage';
 function App() {
   return (
     <>
-    <h1 className="App">
-      StarShips
-    </h1>
     <Routes>
       <Route path="/" element={<StarshipList/>}/>
       <Route path="/starship" element={<StarshipPage />}/>
