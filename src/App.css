@@ -60,9 +60,10 @@ h1{
 }
 
 body {
-  background-image: url(https://i.imgur.com/vw4zWCT.png);
+  background-image: url(../public/space2.gif);
   align-items: center;
   text-align: center;
+  background-size: 150%;
 }
 
 p {
