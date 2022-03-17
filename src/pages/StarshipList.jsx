@@ -11,6 +11,9 @@ const StarshipList = (props) => {
   return (
     <>
       <img id="starships" src="https://i.imgur.com/qEYEpZc.png" alt="STARSHIPS" />
+      <br></br>
+      <>
+  { results.length ? 
       <div>
         <div className="icon-container">
           {results.map((starship) => (
@@ -22,8 +25,14 @@ const StarshipList = (props) => {
           ))}
         </div>
       </div>
-    </>
-  );
-}
+          :
+          <>
+    <h3 id="spin" class="spinner-grow text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </h3>
+          </>
+} </>
+  </>
+  )}
 
 export default StarshipList;

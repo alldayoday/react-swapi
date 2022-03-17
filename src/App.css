@@ -54,6 +54,7 @@ h1{
   border: 1px solid yellow;
   border-radius: 10px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .card :hover{
@@ -84,4 +85,19 @@ p {
   background-color: yellow;
   border: 1px solid yellow;
   width: 20%;
+}
+
+#header {
+  border: 2px solid yellow;
+  margin-bottom: 15px;
+}
+
+#name{
+  font-size: 30px;
+}
+
+#spin {
+  margin-top: 10%;
+  width: 80px;
+  height: 80px;
 }
