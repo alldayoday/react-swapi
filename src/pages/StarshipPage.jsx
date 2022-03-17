@@ -12,8 +12,8 @@ const StarshipPage = (props => {
   }, [])
   return (
   <>
-  <h1>DETAILS</h1>
-    <div className="card">
+  <img id="details" src="https://i.imgur.com/FCGJGBD.png" alt="DETAILS" />
+    <div className="card" id="shipDet">
     <h5 className="card-header">Starship Log</h5>
     <h5 className="card-title">Name: {starship.name}</h5>
     <div className="card-text">Model: {starship.model}</div>
@@ -22,7 +22,7 @@ const StarshipPage = (props => {
     :
     <p>No Pilots</p>
     }
-    <Link className="btn btn-primary" to="/">Return</Link>
+    <Link className="btn btn-primary" id="return" to="/">Return</Link>
   </div>
   </>
   )})

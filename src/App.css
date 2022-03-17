@@ -8,8 +8,8 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 100px;
-}
 
+}
 
 
 .App-header {
@@ -44,25 +44,38 @@ h1{
 }
 
 .card{
-  width: 40%;
+  width: 35%;
   text-align: center;
-  margin: auto;
+  margin: 5px;
   font-family: 'VT323', monospace;
   font-size: 20px;
+  background-color: black;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 10px;
 }
 
 .card-title{
   font-size: 30px;
 }
 
-#starships{
-  margin-left: 25%;
-}
-
 body {
-  background-image: url(https://i.imgur.com/rGchJ1G.mp4);
+  background-image: url(https://i.imgur.com/vw4zWCT.png);
+  align-items: center;
+  text-align: center;
 }
 
 p {
   margin:0;
+}
+
+#shipDet{
+  margin: auto;
+}
+
+#return {
+  color: black;
+  background-color: yellow;
+  border: 1px solid yellow;
+  width: 20%;
 }
