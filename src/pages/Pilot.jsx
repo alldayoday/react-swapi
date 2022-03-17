@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 import { getPilots } from "../services/sw-api";
 
 const Pilot = (props) => {
-const [pilotObjects, setPilotObjects] = useState([])
+const [pilotObject, setPilotObject] = useState([])
 useEffect(() => {
   getPilots(props.pilots)
-  .then(pilotObj => setPilotObjects(pilotObj))
+  .then(pilotObj => setPilotObject(pilotObj))
 })
 return ( 
   <>
   <h4>Pilots:</h4>
     <div>
-      {pilotObjects.map(pilot => 
+      {pilotObject.map(pilot => 
         <p key={pilot.name}>{pilot.name}</p>)
         }
     </div>
